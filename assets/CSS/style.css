@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --branco: white;
+  --cor-de-fundo: #00162E;
+  --fundo-da-senha: #00244D;
+  --fundo-personalizar: #001E40;
+  --borda: #0075FF;
+  --fonte-principal: "Roboto", monospace;
+  --fonte-titulo: "Roboto Mono", monospace;
+
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--branco);
+  font-family: var(--fonte-principal);
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: var(--fonte-principal);
+}
+
+.Apresentacao{
+  text-align: center;
+  margin-top: 80px;
+}
+
+.Apresentacao h1 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: var(--fonte-titulo);
+}
+
+.Apresentacao h2 {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.Apresentacao img {
+  width: 30px;
+  height: 30px;
+}
+
+.senha-gerada {
+  margin-top: 80px;
+  background-color: var(--fundo-da-senha);
+  padding: 24px;
+
+  border-bottom: 4px var(--borda) solid;
+}
+
+label{
+  font-size: 20px;
+}
+
+.checkbox{
+  cursor: pointer;
+  height:20px;
+  width: 20px;
+}
+
+#campo-senha {
+  margin-left: 20px;
+  color: var(--branco);
+  background-color: transparent;
+  border: none;
+  font-family: var(--fonte-titulo);
+  font-size: 40px;
+  width: 70%;
+}
+
+#campo-senha:focus {
+  outline: none;
+}
+
+
+
+.personalização-da-senha {
+  background-color: var(--fundo-personalizar);
+  margin: 30px auto;
+  padding: 24px;
+  border: var(--borda) solid 1px;
+}
+
+.personalização-titulo {
+  font-family: var(--roboto-mono);
+  font-size: 28px;
+}
+
+.parametro_senha-titulo {
+  font-size: 24px;
+}
+
+.personalização-colunas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.parametro_senha {
+  width: 50%;
+  margin: 0 auto;
+  font-family: var(--fonte-principal);
+}
+
+.senha-botoes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parametro_senha-botao{
+  background-color: transparent;
+  color: var(--branco);
+  border: 2px solid var(--borda);
+  padding: 22px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.parametro_senha-texto{
+  border-top: 2px solid var(--borda);
+  border-bottom: 2px solid var(--borda);
+  padding: 22px;
+  font-size: 24px;
+}
+
+.barra{
+  background-color: var(--fundo-da-senha);
+  height: 32px;
+  width: 100%;
+}
+
+.forca{
+  height: 32px;
+  position: relative;
+  bottom: 32px;
+}
+
+.fraca{
+  width: 25%;
+  background-color: #E71B32;
+}
+
+.media{
+  width: 50%;
+  background-color: #FAF408;
+}
+
+.forte{
+  width: 100%;
+  background-color: #00FF85;
+}
+
+.parametro-senha-textos {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width:768px) {
+  .personalização-colunas {
+    flex-direction: row;
+  }
+}
+
